@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<name>springboot</name>
+	<groupId>com.greekw</groupId>
+	<artifactId>springboot</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<!-- Spring Boot 启动父依赖 -->
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.4.RELEASE</version>
+		<relativePath/>
+	</parent>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+		<log4j2.version>2.5</log4j2.version>
+		<mybatis-spring-boot>1.2.0</mybatis-spring-boot>
+		<mysql-connector>5.1.39</mysql-connector>
+	</properties>
+
+    <modules>
+		<module>spring-boot-mybatis</module>
+		<module>spring-boot-helloword</module>
+		<module>spring-boot-properties</module>
+		<module>spring-boot-restful</module>
+		<module>spring-boot-validation</module>
+	</modules>
+
+</project>
